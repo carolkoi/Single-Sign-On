@@ -7,7 +7,6 @@ use App\MySSOServer;
 class MyServerController extends Controller
 {
     public function index(MySSOServer $ssoServer){
-//        dd($ssoServer);
         $command = isset($_REQUEST['command']) ? $_REQUEST['command'] : null;
         if (!$command || !method_exists($ssoServer, $command)) {
             header("HTTP/1.1 404 Not Found");

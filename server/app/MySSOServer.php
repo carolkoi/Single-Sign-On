@@ -48,7 +48,7 @@ class MySSOServer extends Server
      * @return array
      */
     protected function getBrokerInfo($brokerId)
-    {
+    {W
 //        dd($brokerId);
         return isset(self::$brokers[$brokerId]) ? self::$brokers[$brokerId] : null;
     }
